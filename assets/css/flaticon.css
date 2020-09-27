@@ -1,0 +1,184 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 27/09/2020 02:31
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Flaticon.woff2") format("woff2"),
+    url("../fonts/Flaticon.woff") format("woff"),
+    url("../fonts/Flaticon.ttf") format("truetype"),
+    url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.flaticon-recycle:before {
+  content: "\f100";
+}
+.flaticon-mop:before {
+  content: "\f101";
+}
+.flaticon-liquid-soap:before {
+  content: "\f102";
+}
+.flaticon-trash-can:before {
+  content: "\f103";
+}
+.flaticon-hanger:before {
+  content: "\f104";
+}
+.flaticon-shower:before {
+  content: "\f105";
+}
+.flaticon-cleaning-spray:before {
+  content: "\f106";
+}
+.flaticon-iron:before {
+  content: "\f107";
+}
+.flaticon-broom:before {
+  content: "\f108";
+}
+.flaticon-toothbrush:before {
+  content: "\f109";
+}
+.flaticon-bucket:before {
+  content: "\f10a";
+}
+.flaticon-cleaner:before {
+  content: "\f10b";
+}
+.flaticon-sponge:before {
+  content: "\f10c";
+}
+.flaticon-dishwasher:before {
+  content: "\f10d";
+}
+.flaticon-pressure-washer:before {
+  content: "\f10e";
+}
+.flaticon-garbage:before {
+  content: "\f10f";
+}
+.flaticon-vacuum-cleaner:before {
+  content: "\f110";
+}
+.flaticon-toilet:before {
+  content: "\f111";
+}
+.flaticon-plate:before {
+  content: "\f112";
+}
+.flaticon-liquid-soap-1:before {
+  content: "\f113";
+}
+.flaticon-clothes-line:before {
+  content: "\f114";
+}
+.flaticon-garbage-truck:before {
+  content: "\f115";
+}
+.flaticon-towel:before {
+  content: "\f116";
+}
+.flaticon-toilet-paper:before {
+  content: "\f117";
+}
+.flaticon-roller:before {
+  content: "\f118";
+}
+.flaticon-apron:before {
+  content: "\f119";
+}
+.flaticon-duster:before {
+  content: "\f11a";
+}
+.flaticon-detergent:before {
+  content: "\f11b";
+}
+.flaticon-gloves:before {
+  content: "\f11c";
+}
+.flaticon-brush:before {
+  content: "\f11d";
+}
+.flaticon-liquid-soap-2:before {
+  content: "\f11e";
+}
+.flaticon-house:before {
+  content: "\f11f";
+}
+.flaticon-wiper:before {
+  content: "\f120";
+}
+.flaticon-dryer:before {
+  content: "\f121";
+}
+.flaticon-bin:before {
+  content: "\f122";
+}
+.flaticon-hose:before {
+  content: "\f123";
+}
+.flaticon-washing-machine:before {
+  content: "\f124";
+}
+.flaticon-maid:before {
+  content: "\f125";
+}
+.flaticon-clothes-peg:before {
+  content: "\f126";
+}
+.flaticon-laundry:before {
+  content: "\f127";
+}
+.flaticon-tissue-box:before {
+  content: "\f128";
+}
+.flaticon-wiper-1:before {
+  content: "\f129";
+}
+.flaticon-softener:before {
+  content: "\f12a";
+}
+.flaticon-air-freshener:before {
+  content: "\f12b";
+}
+.flaticon-ironing-board:before {
+  content: "\f12c";
+}
+.flaticon-rake:before {
+  content: "\f12d";
+}
+.flaticon-toilet-brush:before {
+  content: "\f12e";
+}
+.flaticon-dustpan:before {
+  content: "\f12f";
+}
+.flaticon-plunger:before {
+  content: "\f130";
+}
+.flaticon-laundry-basket:before {
+  content: "\f131";
+}
