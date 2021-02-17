@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font: 16px/1.6 "Nunito", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #fff;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+html {
+  -ms-overflow-style: scrollbar;
+}
+.alltrans,
+.social-icons li a,
+.owl-nav > button,
+.owl-nav > button:after,
+.counter-box,
+.about-img:after,
+.gallery-img img,
+.form-control,
+.owl-dot,
+.subscribe-row,
+.close-btn,
+.close-btn:before,
+.close-btn:after,
+.tag-btn,
+.btn {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+
+.logo {
+  margin: 20px auto;
+}
+.logo-img {
+  width: 12em;
+  filter: contrast(0) brightness(2);
+}
+/*--------------------------------------------------------------
+# Welcome Box
+--------------------------------------------------------------*/
+.welcome-box {
+  margin-bottom: 50px;
+}
+.welcome-box .welcome-first {
+  font-size: 1em;
+  line-height: 0.5em;
+  letter-spacing: 3px;
+}
+.welcome-box .welcome-title {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.05px;
+  color: #9ecf84;
+}
+.welcome-box p {
+  font-size: 1.2em;
+  line-height: 150%;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 1px;
+}
+/*--------------------------------------------------------------
+# Social links
+--------------------------------------------------------------*/
+#social-icons {
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  z-index: 199;
+}
+.social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: block;
+  margin: 10px 0px;
+}
+.social-icons li a {
+  width: 2em;
+  height: 2em;
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 2em;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5em;
+}
+.social-icons li a:hover {
+  color: #96989a;
+  background-color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Vegas Slide
+--------------------------------------------------------------*/
+.vegas-slide-inner {
+  filter: grayscale(0.8) contrast(1) saturate(1);
+}
+.vegas-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.9;
+  background: linear-gradient(
+    114.31deg,
+    rgba(158, 207, 132, 0.9) -30%,
+    rgba(0, 45, 79, 1) 40%,
+    rgba(0, 45, 79, 1) 80%,
+    rgba(150, 152, 154, 1) 100%
+  );
+}
+.vegas-overlay {
+  opacity: 1 !important;
+  z-index: -1 !important;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.08em;
+}
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact {
+  letter-spacing: 1px;
+  text-align: left;
+}
+.contact .info {
+  border-top: 3px solid #9ecf84;
+  padding: 30px;
+  width: 100%;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
+}
+
+.contact .title {
+  display: block;
+  padding: 0 0 20px 0px;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #80ba62;
+}
+.contact .info .address,
+.contact .info .email,
+.contact .info .phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+.contact .info i {
+  font-size: 1.6em;
+  color: #9ecf84;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .info p {
+  padding: 0;
+  margin: 0 0 0 20px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #9ecf84;
+  padding: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);  */
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  border-radius: 5px;
+  color: rgb(255 255 255 / 0.9);
+  background: rgb(24 210 110 / 0.5);
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1em;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .php-email-form label {
+  font-size: 0.8em;
+}
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #ccc;
+}
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #80ba62;
+  box-shadow: 0 0 3px #80ba62;
+}
+.contact .php-email-form input {
+  height: 40px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #80ba62;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  font-size: 0.8em;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #80ba62;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+#preloader .inner {
+  position: absolute;
+  top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner {
+  border: 8px solid #003760;
+  border-left-color: #80ba62;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 320px) {
+  body {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact .title {
+    font-size: 1.5em;
+  }
+  .contact .info i {
+    font-size: 2em;
+  }
+  .contact .info p {
+    font-size: 1.2em;
+  }
+  .contact .php-email-form label {
+    font-size: 1.1em;
+  }
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  body {
+    font-size: 1.5em;
+  }
+}
