@@ -65,7 +65,10 @@ h3 {
 }
 .logo-img {
   width: 12em;
-  filter: contrast(0) brightness(2);
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 0 30px #fff;
+  /* filter: contrast(0) brightness(2); */
 }
 /*--------------------------------------------------------------
 # Welcome Box
