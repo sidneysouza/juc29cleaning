@@ -65,7 +65,7 @@ h3 {
 }
 .logo-img {
   width: 12em;
-  padding: 0;
+  padding: 15px;
   background: #fff;
   box-shadow: 0 0 30px #fff;
   /* filter: contrast(0) brightness(2); */
