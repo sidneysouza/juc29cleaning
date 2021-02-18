@@ -61,20 +61,20 @@ h3 {
 }
 
 .logo {
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .logo-img {
-  width: 12em;
+  width: 15em;
   padding: 15px;
-  background: #fff;
-  box-shadow: 0 0 30px #fff;
+  /* background: #fff;
+  box-shadow: 0 0 30px #fff; */
   /* filter: contrast(0) brightness(2); */
 }
 /*--------------------------------------------------------------
 # Welcome Box
 --------------------------------------------------------------*/
 .welcome-box {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .welcome-box .welcome-first {
   font-size: 1em;
