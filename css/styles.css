@@ -66,9 +66,6 @@ h3 {
 .logo-img {
   width: 15em;
   padding: 15px;
-  /* background: #fff;
-  box-shadow: 0 0 30px #fff; */
-  /* filter: contrast(0) brightness(2); */
 }
 /*--------------------------------------------------------------
 # Welcome Box
@@ -216,7 +213,7 @@ footer {
 
 .contact .info p {
   padding: 0;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 5px;
   font-size: 0.9em;
   line-height: 1.5em;
   letter-spacing: 2px;
