@@ -249,22 +249,25 @@
 
     <script>
       $(function () {
+        // Pre-loader
         $(window).on("load", function () {
           $("#preloader .inner").delay(1000).fadeOut("fast");
           $("#preloader").delay(1000).fadeOut("fast");
           $("body").delay(1000).css({ overflow: "visible" });
         });
 
+        // Vegas slide
         $("body").vegas({
           slides: [
-            { src: "/images/01.jpg", transitionDuration: 100 },
+            { src: "/images/01.jpg" },
             { src: "/images/02.jpg" },
             { src: "/images/03.jpg" },
             { src: "/images/04.jpg" },
           ],
           overlay: "https://www.transparenttextures.com/patterns/brilliant.png",
-
+          shuffle: true,
           delay: 10000,
+          firstTransitionDuration: 1000,
           transitionDuration: 5000,
           timer: false,
         });
