@@ -1,327 +1,432 @@
-/*
-====================================================
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
-* 	[Master Stylesheet]
-	
-	Theme Name :  
-	Version    :  
-	Author     :  
-	Author URI :  
-
-====================================================
-
-	TOC
-	
-	1. PRIMARY STYLES
-	2. COMMONS FOR PAGE DESIGN
-		JQUERY LIGHT BOX
-	3. MAIN SECTION
-
-====================================================
-
-/* ---------------------------------
-1. PRIMARY STYLES
---------------------------------- */
-
-html {
-  font-size: 100%;
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0px;
-  padding: 0px;
-  touch-action: manipulation;
-}
-
+html,
 body {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  word-wrap: break-word;
-  overflow-x: hidden;
-  color: #333;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-ul,
-span,
-li,
-img,
-inpot,
-button {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.5;
-  font-weight: inherit;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Poppins", sans-serif;
-}
-
-p {
-  line-height: 1.6;
-  font-size: 1.05em;
-  font-weight: 400;
-  color: #555;
-}
-
-h1 {
-  font-size: 3.5em;
-  line-height: 1;
-}
-h2 {
-  font-size: 3em;
-  line-height: 1.1;
-}
-h3 {
-  font-size: 2.5em;
-}
-h4 {
-  font-size: 1.5em;
-}
-h5 {
-  font-size: 1.2em;
-}
-h6 {
-  font-size: 0.9em;
-  letter-spacing: 1px;
-}
-
-a,
-button {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s;
-  line-height: 1;
-}
-
-a:focus,
-a:active,
-a:hover,
-button:focus,
-button:active,
-button:hover,
-a b.light-color:hover {
-  text-decoration: none;
-  color: #9ecf84;
-}
-
-b {
-  font-weight: 500;
+body {
+  font: 16px/1.6 "Nunito", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #fff;
 }
 
 img {
-  width: 100%;
-}
-
-li {
-  list-style: none;
-  display: inline-block;
-}
-
-span {
-  display: inline-block;
-}
-
-button {
-  outline: 0;
   border: 0;
-  background: none;
-  cursor: pointer;
+  max-width: 100%;
+}
+html {
+  -ms-overflow-style: scrollbar;
+}
+.alltrans,
+.social-icons li a,
+.owl-nav > button,
+.owl-nav > button:after,
+.counter-box,
+.about-img:after,
+.gallery-img img,
+.form-control,
+.owl-dot,
+.subscribe-row,
+.close-btn,
+.close-btn:before,
+.close-btn:after,
+.tag-btn,
+.btn {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
 }
 
-b.light-color {
-  color: #444;
+.logo {
+  margin: 10px auto;
 }
-
-.icon {
-  font-size: 1.1em;
-  display: inline-block;
-  line-height: inherit;
+.logo-img {
+  width: 15em;
 }
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  line-height: inherit;
+/*--------------------------------------------------------------
+# Welcome Box
+--------------------------------------------------------------*/
+.welcome-box {
+  margin-bottom: 30px;
 }
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+.welcome-box .welcome-first {
+  font-size: 1em;
+  line-height: 0.5em;
+  letter-spacing: 3px;
 }
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+.welcome-box .welcome-title {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.05px;
+  color: #9ecf84;
 }
-
-/* ---------------------------------
-2. COMMONS FOR PAGE DESIGN
---------------------------------- */
-
-.center-text {
+.welcome-box p {
+  font-size: 1.2em;
+  line-height: 150%;
   text-align: center;
-}
-
-.display-table {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
-.display-table-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-::-webkit-input-placeholder {
-  font-size: 0.9em;
+  margin: auto;
   letter-spacing: 1px;
 }
-
-::-moz-placeholder {
-  font-size: 0.9em;
-  letter-spacing: 1px;
+/*--------------------------------------------------------------
+# Social links
+--------------------------------------------------------------*/
+#social-icons {
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  z-index: 199;
+}
+.social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: block;
+  margin: 10px 0px;
+}
+.social-icons li a {
+  width: 2em;
+  height: 2em;
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 2em;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5em;
+}
+.social-icons li a:hover {
+  color: #04294e;
+  background-color: #fff;
 }
 
-:-ms-input-placeholder {
-  font-size: 0.9em;
-  letter-spacing: 1px;
+/*--------------------------------------------------------------
+# Vegas Slide
+--------------------------------------------------------------*/
+.vegas-slide-inner {
+  filter: grayscale(0.9) contrast(1.3) hue-rotate(500deg) brightness(0.85);
 }
-
-:-moz-placeholder {
-  font-size: 0.9em;
-  letter-spacing: 1px;
-}
-
-.full-height {
-  height: 100%;
-}
-
-.position-static {
-  position: static;
-}
-
-.font-white {
-  color: #fff;
-}
-
-/* ---------------------------------
-3. MAIN SECTION
---------------------------------- */
-.main-area {
-  position: relative;
-  height: 100vh;
-  padding: 0 20px;
-  color: #fff;
-}
-.main-area::before {
+.vegas-slide::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("../img/background.jpg");
-  z-index: -1;
-  background-size: cover;
-  filter: grayscale(1);
-}
-
-.main-area:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  opacity: 0.6;
-  background: #003760;
+  z-index: 1;
+  opacity: 0.8;
   background: linear-gradient(
-    0deg,
-    rgba(0, 32, 56, 1) 0%,
-    rgba(0, 55, 96, 1) 38%,
-    rgba(115, 152, 95, 1) 100%
+    114.31deg,
+    rgba(158, 207, 132, 0.9) -20%,
+    rgba(0, 45, 79, 0.9) 30%,
+    rgba(0, 45, 79, 1) 70%,
+    rgba(150, 152, 154, 1) 110%
   );
 }
-
-.main-area .logo {
-  width: 20%;
-  margin-bottom: 50px;
+.vegas-overlay {
+  opacity: 1 !important;
+  z-index: -1 !important;
 }
 
-.main-area .desc {
-  margin: 20px auto;
-  max-width: 500px;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.08em;
 }
 
-.main-area .notify-btn {
-  padding: 13px 35px;
-  border-radius: 50px;
-  border: 2px solid #9ecf84;
-  color: #fff;
-  background: #9ecf84;
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact {
+  letter-spacing: 1px;
+  text-align: left;
 }
-
-.main-area .notify-btn:hover {
-  background: none;
-}
-
-.main-area .social-btn {
-  position: absolute;
-  bottom: 40px;
+.contact .info {
+  border-top: 3px solid #9ecf84;
+  padding: 30px;
   width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
 }
 
-.main-area .social-btn > li > a {
-  margin: 0 10px;
-  padding-bottom: 7px;
-  position: relative;
-  overflow: hidden;
+.contact .title {
+  display: block;
+  padding: 0 0 20px 0px;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #9ecf84;
+}
+.contact .info .address,
+.contact .info .email,
+.contact .info .phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+.contact .info i {
+  font-size: 1.6em;
+  color: #9ecf84;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-area .social-btn > li > a:after {
+.contact .info p {
+  padding: 0;
+  margin: 0 0 0 5px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #9ecf84;
+  padding: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);  */
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  border-radius: 5px;
+  color: rgb(255 255 255 / 0.9);
+  background: rgb(24 210 110 / 0.5);
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1em;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
   content: "";
-  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .php-email-form label {
+  font-size: 0.8em;
+}
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #ccc;
+}
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #80ba62;
+  box-shadow: 0 0 3px #80ba62;
+}
+.contact .php-email-form input {
+  height: 40px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #80ba62;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  font-size: 0.8em;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #80ba62;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  transition: all 0.2s;
-  height: 2px;
-  background: #9ecf84;
+  background: #fff;
 }
 
-.main-area .social-btn > li > a:hover:after {
-  transform: translateX(100%);
+#preloader .inner {
+  position: absolute;
+  top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner {
+  border: 8px solid #003760;
+  border-left-color: #80ba62;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 425px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact .title {
+    font-size: 1.5em;
+  }
+  .contact .info i {
+    font-size: 2em;
+  }
+  .contact .info p {
+    font-size: 1.2em;
+  }
+  .contact .php-email-form label {
+    font-size: 1.1em;
+  }
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  body {
+    font-size: 1.5em;
+  }
 }
