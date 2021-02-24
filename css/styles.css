@@ -411,17 +411,17 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   body {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 }
 @media only screen and (min-width: 1366px) {
   body {
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
 }
 @media only screen and (min-width: 1440px) {
   body {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 
