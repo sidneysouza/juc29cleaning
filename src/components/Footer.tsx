@@ -1,6 +1,6 @@
 import { CreditCard, Facebook, Instagram, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logoFooter from '../assets/logo-footer.png';
 
 export const Footer = () => {
   return (
@@ -8,15 +8,16 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-12 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
           <div className="max-w-xs">
-            <Link to="/" className="flex items-center gap-2 mb-8 hover:opacity-80 transition-opacity">
-            <div className='bg-white p-0 flex items-center justify-center rounded-xl'>
+            <div className='flex gap-4 items-center'>
 
-              <img src={logo} alt="Logo" className="w-36 h-auto" />
-            </div>
+            <Link to="/" className="flex items-center gap-2 mb-8 hover:opacity-80 transition-opacity">
+              <img src={logoFooter} alt="Logo" className="flex-1" />
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed mb-8">
+            <div className='flex flex-col gap-4'>
+            <p className="text-white/60 text-sm leading-relaxed">
               We treat your home and business as if they were our own.
             </p>
+            
             <div className="flex gap-4">
               <a href="https://www.instagram.com/juc29cleaning/" target='_blank' className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-brand-blue transition-all">
                 <Instagram size={18} />
@@ -24,6 +25,8 @@ export const Footer = () => {
               <a href="https://www.facebook.com/juc29cleaning/" target='_blank' className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-brand-blue transition-all">
                 <Facebook size={18} />
               </a>
+            </div>
+            </div>
             </div>
           </div>
 
