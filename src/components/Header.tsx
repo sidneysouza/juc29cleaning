@@ -1,4 +1,6 @@
 import { Clock, Facebook, Instagram, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export const Header = () => {
   return (
@@ -20,30 +22,27 @@ export const Header = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <a href="https://www.facebook.com/juc29cleaning" target='_blank' className="hover:text-brand-green transition-colors"><Facebook size={14} /></a>
-          <a href="https://www.instagram.com/juc29cleaning/" target='_blank' className="hover:text-brand-green transition-colors"><Instagram size={14} /></a>
+          <a href="https://www.facebook.com/juc29cleaning" target='_blank' className="hover:text-brand-green transition-colors" rel="noreferrer"><Facebook size={18} /></a>
+          <a href="https://www.instagram.com/juc29cleaning/" target='_blank' className="hover:text-brand-green transition-colors" rel="noreferrer"><Instagram size={18} /></a>
         </div>
       </div>
 
       {/* Main Nav */}
-      <nav className="bg-white py-4 px-4 md:px-12 flex justify-between items-center sticky top-0 z-50 shadow-sm">
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-brand-blue rounded-md flex items-center justify-center text-white font-bold text-xl">
-            J
-          </div>
-          <span className="font-bold text-brand-blue text-lg hidden sm:block">Juc29 Cleaning</span>
-        </div>
+      <nav className="bg-white py-4 px-4 md:px-12 flex justify-between items-center sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <img src={logo} alt="Logo" className="w-40 h-auto" />          
+        </Link>
         
-        <ul className="hidden md:flex items-center gap-8 text-sm font-semibold text-brand-blue">
-          <li><a href="#" className="hover:text-brand-green transition-colors">Home</a></li>
-          <li><a href="#" className="hover:text-brand-green transition-colors">About</a></li>
-          <li><a href="#" className="hover:text-brand-green transition-colors">Services</a></li>
-          <li><a href="#" className="hover:text-brand-green transition-colors">Prices</a></li>
-          <li><a href="#" className="hover:text-brand-green transition-colors">We're Hiring</a></li>
-          <li><a href="#" className="hover:text-brand-green transition-colors">FAQ</a></li>
+        <ul className="hidden md:flex items-center gap-10 text-xl font-medium text-brand-blue">
+          <li><Link to="/" className="hover:text-brand-green transition-colors">Home</Link></li>
+          <li><Link to="/about" className="hover:text-brand-green transition-colors">About</Link></li>
+          <li><Link to="/services" className="hover:text-brand-green transition-colors">Services</Link></li>
+          <li><Link to="/prices" className="hover:text-brand-green transition-colors">Prices</Link></li>
+          <li><Link to="/hiring" className="hover:text-brand-green transition-colors">We're Hiring</Link></li>
+          <li><Link to="/faq" className="hover:text-brand-green transition-colors">FAQ</Link></li>
         </ul>
 
-        <button className="bg-brand-green text-brand-blue px-6 py-2 rounded-full font-bold text-sm hover:bg-brand-green/90 transition-all shadow-md">
+        <button className="bg-brand-green/80 text-brand-blue px-10 py-3 rounded-full font-bold text-sm hover:bg-brand-green/90 transition-all shadow-md active:scale-95 uppercase">
           BOOK NOW
         </button>
       </nav>

@@ -1,4 +1,4 @@
-import { CalendarCheck, Star } from 'lucide-react';
+import { CalendarCheck } from 'lucide-react';
 import womanCleaning from '../assets/woman-cleaning.jpg';
 
 export const Hero = () => {
@@ -40,24 +40,24 @@ export const Hero = () => {
       </div>
 
       {/* Ratings Float */}
-      <div className="absolute bottom-10 left-0 right-0 z-30 flex justify-center gap-4 md:gap-12 px-4">
+      {/* <div className="absolute bottom-10 left-0 right-0 z-30 flex justify-center gap-4 md:gap-12 px-4">
         <RatingCard label="5.0 Rating" />
         <RatingCard label="5.0 Rating" />
-      </div>
+      </div> */}
     </section>
   );
 };
 
-const RatingCard = ({ label }: { label: string }) => (
-  <div className="bg-white/95 p-4 rounded-xl shadow-lg flex items-center gap-4 border border-brand-blue/5">
-    <div className="w-12 h-12 bg-gray-100 rounded flex items-center justify-center">
-      <Star size={24} className="text-brand-blue fill-brand-blue" />
-    </div>
-    <div>
-      <div className="flex gap-1 mb-1">
-        {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={12} className="text-orange-400 fill-orange-400" />)}
-      </div>
-      <p className="text-xs font-black text-brand-blue uppercase">{label}</p>
-    </div>
-  </div>
-);
+// const RatingCard = ({ label }: { label: string }) => (
+//   <div className="bg-white/95 p-4 rounded-xl shadow-lg flex items-center gap-4 border border-brand-blue/5">
+//     <div className="w-12 h-12 bg-gray-100 rounded flex items-center justify-center">
+//       <Star size={24} className="text-brand-blue fill-brand-blue" />
+//     </div>
+//     <div>
+//       <div className="flex gap-1 mb-1">
+//         {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={12} className="text-orange-400 fill-orange-400" />)}
+//       </div>
+//       <p className="text-xs font-black text-brand-blue uppercase">{label}</p>
+//     </div>
+//   </div>
+// );

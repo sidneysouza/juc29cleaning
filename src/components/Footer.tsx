@@ -1,4 +1,6 @@
-import { Instagram, Facebook, Phone, Mail, MapPin, CreditCard, Star } from 'lucide-react';
+import { CreditCard, Facebook, Instagram, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export const Footer = () => {
   return (
@@ -6,20 +8,20 @@ export const Footer = () => {
       <div className="container mx-auto px-4 md:px-12 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
           <div className="max-w-xs">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-blue font-bold text-2xl shadow-xl">
-                J
-              </div>
-              <span className="font-bold text-white text-xl">Juc29 Cleaning</span>
+            <Link to="/" className="flex items-center gap-2 mb-8 hover:opacity-80 transition-opacity">
+            <div className='bg-white p-0 flex items-center justify-center rounded-xl'>
+
+              <img src={logo} alt="Logo" className="w-36 h-auto" />
             </div>
+            </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-8">
               We treat your home and business as if they were our own.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-brand-blue transition-all">
+              <a href="https://www.instagram.com/juc29cleaning/" target='_blank' className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-brand-blue transition-all">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-brand-blue transition-all">
+              <a href="https://www.facebook.com/juc29cleaning/" target='_blank' className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-green hover:text-brand-blue transition-all">
                 <Facebook size={18} />
               </a>
             </div>
@@ -54,7 +56,7 @@ export const Footer = () => {
 
         <div className="border-t border-white/10 pt-10 text-center">
           <p className="text-white/40 text-xs uppercase tracking-widest">
-            Copyright © 2023 JUC29 GROUP, Inc - All rights reserved. <span className="text-brand-green font-bold">STAN</span>
+            Copyright © {new Date().getFullYear()} JUC29 GROUP, Inc - All rights reserved.
           </p>
         </div>
       </div>

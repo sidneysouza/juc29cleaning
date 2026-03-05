@@ -1,4 +1,4 @@
-import { Star, ShieldCheck, Clock, CreditCard, MessageSquare, Search } from 'lucide-react';
+import { Clock, CreditCard, Star } from 'lucide-react';
 
 export const Services = () => {
   return (
