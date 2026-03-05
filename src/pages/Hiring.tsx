@@ -12,7 +12,7 @@ export const Hiring = () => {
           style={{ backgroundImage: `url(${womanCleaning})` }}
         ></div>
         <div className="container mx-auto px-4 md:px-12 relative z-20 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-black uppercase mb-4">We're Hiring</h1>
+          <h1 className="text-4xl md:text-6xl text-white font-black uppercase mb-4">We're Hiring</h1>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">
             Join the most professional cleaning team in Tampa. Grow with us.
           </p>

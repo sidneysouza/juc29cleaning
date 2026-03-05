@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
@@ -10,7 +10,7 @@ import { FAQ } from './pages/FAQ';
 
 function App() {
   return (
-    <BrowserRouter basename="/juc29cleaning/">
+    <HashRouter>
       <div className="min-h-screen bg-white">
         <Header />
         <main>
@@ -25,7 +25,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

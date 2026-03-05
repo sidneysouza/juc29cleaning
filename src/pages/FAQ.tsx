@@ -13,7 +13,7 @@ export const FAQ = () => {
           style={{ backgroundImage: `url(${womanCleaning})` }}
         ></div>
         <div className="container mx-auto px-4 md:px-12 relative z-20 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-black uppercase mb-4">FAQ</h1>
+          <h1 className="text-4xl md:text-6xl text-white font-black uppercase mb-4">FAQ</h1>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">
             Everything you need to know about our cleaning services.
           </p>
